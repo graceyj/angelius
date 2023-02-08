@@ -1,0 +1,385 @@
+@charset "utf-8";
+body, header, footer, main, section, article, p, address, h1, h2, h3, h4, h5, h6, nav, div, form, fieldset, legend, table, tbody, th, td, ol, ul, li, dl, dt, dd, input, button, figure, figcaption{ margin:0; padding:0; }
+ol, ul{ list-style:none; }
+img{ display:block; border:0; }
+a{ text-decoration:none; }
+address{ font-style:normal; }
+button, fieldset{ border:0; }
+legend, caption, hr{ display:none; }
+table{ border-collapse:collapse; border-spacing:0; }
+/* ---------------------default------------------------ */
+body{
+    font-size:14px; color:#090909;
+    font-family:Arial, sans-serif; 
+}
+a{color:#090909;}
+.hidden{display:none;}
+/* ---------------------header------------------------- */
+#main_header{
+    position:fixed; left:50%; transform:translateX(-50%);
+    z-index:99999;
+}
+#main_header .main_menu{
+    width:1400px; height:70px; background:#FAD15D;
+    position:relative; top:30px;
+}
+#main_header .logo{
+    width:216px; height:46px;
+    position:absolute; top:12px; left:15px;
+}
+#main_header .gnb{
+    width:750px; height:70px; margin-left:450px;
+    text-align:center; font-size:18px;
+    font-weight:bold; color:#090909;
+}
+#main_header .gnb>ul{
+    width:750px; height:70px;
+    position:absolute; left:350px; top:0;
+}
+#main_header .gnb>ul>li{
+    width:150px; height:70px; line-height:70px; float:left; position:relative;
+}
+#main_header .gnb>ul>li:hover>a{
+    font-size:22px; transition:all 0.2s;
+}
+#main_header .gnb>ul>li>a{
+    width:150px; height:70px; margin:0 auto; display:block; text-align:center; 
+}
+#main_header .gnb>ul>li>a>span{
+    display:block; padding:0px 10px; height:45px; 
+    position:relative; left:0;
+}
+#main_header .sub{
+    width:150px; height:320px;
+    position:absolute; left:0;
+    display:none;
+}
+#main_header .sub>ul>li>a{
+    width:150px; height:45px; line-height:45px;
+    font-size:14px; text-align:center; font-weight:bold;
+    color:#fff;  background:#31271E; 
+    display:block;
+}
+#main_header .sub>ul>li:first-child{padding-top:2px;}
+#main_header .gnb>ul>li:hover>.sub{display:block;}
+#main_header .sub>ul>li:hover>a{
+    color:#31271E; background:#FAD15D;
+}
+#main_header .sub>ul>li>a:hover{
+    color:#31271E; background:#FAD15D; 
+    font-size:17px; font-weight:bold;
+}
+#main_header .tnb{
+    width:130px; height:30px; float:right;
+    position:absolute; right:20px; top:20px;
+}
+#main_header .global{width:60px; height:30px;}
+#main_header .global>a{
+    display:block; width:60px; height:30px;
+    border:1px solid #31271E; background:#31271E;
+    border-radius:10px; font-size:14px; color:#fff;
+    margin:0 auto; font-weight:bold;
+}
+#main_header .global>a>span{
+    display:block; padding:5px 13px; height:15px; 
+}
+#main_header .lang{
+    width:60px; height:60px;
+    border-radius:10px; background:#31271E;
+    position:absolute; top:33px; left:0;
+}
+#main_header .lang>ul>li>a{
+    width:60px; height:30px; line-height:30px;
+    font-weight:bold; color:#fff;
+    display:block; text-align:center; font-size:12px;
+}
+#main_header .lang>ul>li:hover>a{
+    color:#31271E; background:#fff; 
+    opacity:0.5; border-radius:10px;
+}
+#main_header .login{
+    width:60px; height:30px;
+    position:absolute; right:0; top:0;
+}
+#main_header .login>a{
+    display:block; width:60px; height:30px;
+    border:1px solid #31271E; background:#fff;
+    border-radius:10px; font-size:14px; color:#31271E;
+    margin:0 auto; font-weight:bold;
+}
+#main_header .login>a>span{ display:block; padding:5px 8px; height:15px; }
+#main_header .quick_menu{position:absolute; top:180px; right:0;}
+#main_header .cust_back{margin-top:20px;}
+#main_header .eatz_back{margin-top:20px;}
+/* -------------------//header------------------------- */
+
+/* ---------------------main--------------------------- */
+#main_section{width:1920px; height:auto;}
+/* ------------------슬라이드 배너---------------------- */
+#main_section .main_slide{
+    width:100%; height:700px;
+}
+/* ------------------//슬라이드 배너-------------------- */
+/* ------------------엔젤 시그니처---------------------- */
+#main_section .main_signature{
+    width:1920px; height:700px;
+    background:url("../img/main02_back.png") no-repeat center center; background-size:cover;
+}
+#main_section .signature_wrap{
+    width:100%; height:700px; overflow:hidden;
+    padding-top:45px;
+}
+#main_section .title{
+    font-size:32px; font-weight:bold; text-align:center;
+}
+#main_section .title>p:nth-child(2){padding-left:100px;}
+#main_section .signature_img{
+    width:1500px; height:620px; margin:0 auto;
+    position:relative;
+}
+#main_section .s_hover01{
+    width:540px; height:290px; 
+    position:absolute; left:0; top:70px;
+}
+#main_section .s_hover01>a{
+    display:block; width:300px; height:270px;
+    padding-left:235px;
+}
+#main_section .s_hover01>a>figure>figcaption{
+    position:absolute; bottom:100px; left:30px;
+    font-size:22px;
+}
+#main_section .s_hover01>a>figure>figcaption>p{ font-size:18px; color:#726C68;}
+#main_section .s_hover02{
+    width:515px; height:300px; 
+    position:absolute; left:420px; top:200px;
+}
+#main_section .s_hover02>a{
+    display:block; width:195px; height:270px;
+    padding-left:235px;
+}
+#main_section .s_hover02>a>figure>figcaption{
+    position:absolute; bottom:10px; left:0px; font-size:22px;
+}
+#main_section .s_hover02>a>figure>figcaption>p{ font-size:18px; color:#726C68;}
+#main_section .s_hover03{
+    width:380px; height:320px; 
+    position:absolute; right:70px; top:30px;
+}
+#main_section .s_hover03>a{
+    display:block; width:310px; height:230px;
+}
+#main_section .s_hover03>a>figure>figcaption{
+    position:absolute; left:0px; bottom:0px; font-size:22px;
+}
+#main_section .s_hover03>a>figure>figcaption>p{ font-size:18px; color:#726C68;}
+/* ------------------//엔젤 시그니처-------------------- */
+/* ----------------------롯데 잇츠---------------------- */
+#main_section .lotte_eatz{width:100%; height:400px;}
+/* ---------------------//롯데 잇츠--------------------- */
+/* ---------------------엔젤 서비스--------------------- */
+#main_section .main_service{
+    width:1920px; height:500px; background:#fff;
+}
+#main_section .service_wrap{
+    width:100%; height:500px; padding-top:30px; overflow:hidden;
+}
+#main_section .service_img{
+    width:1230px; height:300px; margin:0 auto;
+    padding-top:30px;
+}
+#main_section .service_img>div{
+    width:400px; height:300px; 
+    float:left; margin-left:10px;
+    position:relative;
+}
+#main_section .store_search>input{
+    width:180px; height:35px; border:1px solid #fff;
+    border-radius:30px;
+    background:#fff url("../img/search_icon.png") no-repeat center right 8px; background-size:20px 20px;
+    text-align:left; text-indent:5px; color:#ccc;
+    font-size:12px; font-weight:bold;
+    position:absolute; bottom:40px; right:50px;
+}
+#main_section .catering>button{
+    width:150px; height:35px; background:#31271E;
+    border-radius:30px; text-align:center;
+    font-weight:bold; font-size:15px; color:#fff;
+    position:absolute; bottom:40px; right:50px;
+    cursor:pointer;
+    
+}
+#main_section .angel_mall>button{
+    width:150px; height:35px; background:#FAD15D;
+    border-radius:30px; text-align:center;
+    font-weight:bold; font-size:15px; color:#fff;
+    position:absolute; bottom:40px; right:50px;
+    cursor:pointer;
+}
+/* --------------------//엔젤 서비스-------------------- */
+/* ---------------------엔젤 가맹점--------------------- */
+#main_section .main_franchise{
+    width:1920px; height:1000px; background:#FCE7AD; 
+}
+#main_section .franchise_wrap{
+    width:100%; height:1000px; padding-top:50px; overflow:hidden;
+}
+#main_section .f_img_wrap{padding-top:50px;}
+#main_section .franchise_img{
+    width:1200px; height:700px; margin:0 auto;
+    position:relative;
+}
+#main_section .franchise_img>a{
+    width:200px; height:200px;
+    position:absolute; left:500px; top:300px;
+}
+#main_section .store_wrap{width:1200px; height:700px;}
+#main_section .store_wrap>.store01{
+    width:700px; height:300px; float:left; position:relative; 
+}
+#main_section .store_wrap>.store02{
+    width:500px; height:300px; float:right; position:relative; 
+}
+#main_section .store_wrap>.store03{
+    width:500px; height:400px; float:left; position:relative; 
+}
+#main_section .store_wrap>.store04{
+    width:500px; height:200px; float:right; position:relative; 
+}
+#main_section .store_wrap>.store05{
+    width:700px; height:200px; float:right; position:relative; 
+}
+#main_section .store_wrap>li>a>img{opacity:0.5;}
+#main_section .store_wrap>li>p{
+    font-size:20px; font-weight:bold; color:#090909;
+}
+#main_section .store_wrap>li:nth-child(1)>p, #main_section .store_wrap>li:nth-child(3)>p{ 
+    position:absolute; left:20px; bottom:20px;
+}
+#main_section .store_wrap>li:nth-child(2)>p, #main_section .store_wrap>li:nth-child(4)>p, #main_section .store_wrap>li:nth-child(5)>p{
+    position:absolute; right:20px; bottom:10px;
+}
+/* --------------------//엔젤 가맹점-------------------- */
+/* ---------------------- 엔젤 소식--------------------- */
+#main_section .main_notice{
+    width:1920px; height:500px; background:#fff;
+}
+#main_section .notice_wrap{
+    width:100%; height:500px; padding-top:40px; 
+    /* overflow:hidden;*/
+}
+#main_section .ne>p:nth-child(2){ padding-left:140px;}
+#main_section .cotent_wrap{
+    width:1230px; height:300px; margin:0 auto;
+    padding-top:20px;
+}
+#main_section .news{
+    width:600px; height:300px; float:left;
+}
+#main_section .news>table{
+    width:600px; height:300px; border:3px solid #31271E;
+}
+#main_section .suj1{width:150px; height:135px; border-right:2px solid #31271E;}
+#main_section .suj1>p{
+    font-size:24px; font-weight:bold; color:#31271E; text-align:center;
+}
+#main_section .suj1>a{
+    width:50px; height:50px; text-indent:-9999px;
+    background:url("../img/right_arrow01.png") no-repeat center center;
+    display:block; margin:0 auto;
+}
+#main_section .news_txt1{
+    width:400px; height:97px; border-bottom:2px solid #31271E;
+}
+#main_section .news_txt1 a{
+    font-size:14px; font-weight:bold; color:#726C68; padding-left:10px;
+}
+#main_section .date{text-align:left; font-size:12px; color:#726C68;}
+#main_section .event{
+    width:600px; height:300px; float:right;
+}
+#main_section .event>table{
+    width:600px; height:300px; border:3px solid #FAD15D;
+}
+#main_section .suj2{width:150px; height:135px; border-right:2px solid #FAD15D;}
+#main_section .suj2>p{
+    font-size:24px; font-weight:bold; color:#FAD15D; text-align:center;
+}
+#main_section .suj2>a{
+    width:50px; height:50px; text-indent:-9999px;
+    background:url("../img/right_arrow02.png") no-repeat center center;
+    display:block; margin:0 auto;
+}
+#main_section .news_txt2{
+    width:400px; height:97px; border-bottom:2px solid #FAD15D;
+}
+#main_section .news_txt2 a{
+    font-size:14px; font-weight:bold; color:#726C68; padding-left:10px;
+}
+/* --------------------// 엔젤 소식--------------------- */
+/* ------------------- 엔젤 인스타---------------------- */
+#main_section .main_coffee{
+    width:1920px; height:500px; background:#FCE7AD;
+}
+#main_section .coffee_wrap{
+    width:100%; height:500px; padding-top:50px;
+    /* overflow:hidden; */
+}
+#main_section .co>p:nth-child(2){padding-left:120px;}
+#main_section .title_wrap{
+    width:290px; height:80px; margin:0 auto;
+    position:relative;
+}
+#main_section .title_wrap>img{
+    width:50px; height:50px;
+    position:absolute; top:10px; right:-20px;
+}
+#main_section .insta_img{
+    width:1230px; height:230px; margin:0 auto;
+}
+#main_section .insta_img>ul>li{
+    width:230px; height:230px; float:left;
+    padding-left:20px; padding-top:40px;
+}
+#main_section .insta_img>ul>li:first-child{padding-left:0;}
+/* ------------------// 엔젤 인스타--------------------- */
+/* -------------------//main--------------------------- */
+
+/* ---------------------footer------------------------- */
+#main_footer{
+    width:100%;  height:200px; background:#31271E;
+}
+#main_footer .footer_wrap{
+    width:1400px;  height:200px;  margin:0 auto;  overflow:hidden;  
+    background:url("../img/footer_logo.png") no-repeat right 50px;
+}
+#main_footer .foot_top{
+    width:1400px; height:45px;   margin:30px auto;
+}
+#main_footer .foot_top ul{
+    width:770px; height:45px;  line-height:45px;  float:left;    
+}
+#main_footer .foot_top ul>li{
+    float:left;  margin-left:15px;
+}
+#main_footer .foot_top ul>li:first-child{
+    margin-left:0px;
+}
+#main_footer .foot_top a{
+    font-size:15px; color:#fff; font-weight:bold;
+}
+#main_footer .sns_wrap{width:275px; height:45px;  float:right;}
+#main_footer .sns_wrap li{  float:left;  margin-left:10px; }
+#main_footer .sns_wrap li:first-child{  margin-left:0;     }
+#main_footer .sns_wrap a{
+    display:block; width:43px; height:43px;
+}
+#main_footer .footer_bot{
+    width:1400px;  padding-bottom:30px;
+}
+#main_footer .footer_bot>address{width:770px;  line-height:2em; }
+#main_footer .footer_bot>address>p{
+    font-size:13px; color:#ccc;
+}
+
+/* -------------------//footer------------------------- */
